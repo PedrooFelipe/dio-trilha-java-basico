@@ -19,7 +19,11 @@ public class ContaTerminal {
         System.out.println("Por gentileza, digite sua agência!(ex: 123-4)");
         agencia = entrada.next();
 
-        System.out.println("Por favor, digite o numero da agência!");
+        System.out.println("Por favor, digite o número da agência!");
         numero = entrada.nextInt();
+
+        //Depois de todas as informações terem sido inseridas, o sistema deverá exibir o seguinte:
+
+        System.out.println("Olá " + nomeCliente.concat(" ").concat(sobrenomeCliente).toUpperCase() + ", obrigado por criar uma conta em nosso banco, sua agência é " + agencia + ", conta " + numero + " e seu saldo R$" + saldo + " já está disponível para saque.");
     }
 }
